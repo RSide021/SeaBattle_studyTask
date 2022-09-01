@@ -1,0 +1,235 @@
+﻿<UserControl x:Class="SeaBattleV2.CreateField"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SeaBattleV2"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Background="White">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20 0" Orientation="Vertical">
+            <Button x:Name="CleearField" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Очистить поле" Margin="10" Click="ClearField_Click"/>
+                <Grid x:Name="GridField">
+                <Grid.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="{Binding RelativeSource={RelativeSource Self}, Path=ActualHeight}"/>
+                        <Setter Property="Height" Value="30"/>
+                        <Setter Property="Background" Value="White"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="BorderBrush" Value="Black"/>
+                    </Style>
+                    <Style TargetType="Label">
+                        <Setter Property="Width" Value="{Binding RelativeSource={RelativeSource Self}, Path=ActualHeight}"/>
+                        <Setter Property="Height" Value="30"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="BorderBrush" Value="LightSlateGray"/>
+                    </Style>
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <!--#region Buttons-->
+                <Button x:Name="C1xR1" Grid.Column="1" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR1" Grid.Column="2" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR1" Grid.Column="3" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR1" Grid.Column="4" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR1" Grid.Column="5" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR1" Grid.Column="6" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR1" Grid.Column="7" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR1" Grid.Column="8" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR1" Grid.Column="9" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR1" Grid.Column="10" Grid.Row="1" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+
+                <Button x:Name="C1xR2" Grid.Column="1" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR2" Grid.Column="2" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR2" Grid.Column="3" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR2" Grid.Column="4" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR2" Grid.Column="5" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR2" Grid.Column="6" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR2" Grid.Column="7" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR2" Grid.Column="8" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR2" Grid.Column="9" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR2" Grid.Column="10" Grid.Row="2" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+
+                <Button x:Name="C1xR3" Grid.Column="1" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR3" Grid.Column="2" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR3" Grid.Column="3" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR3" Grid.Column="4" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR3" Grid.Column="5" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR3" Grid.Column="6" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR3" Grid.Column="7" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR3" Grid.Column="8" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR3" Grid.Column="9" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR3" Grid.Column="10" Grid.Row="3" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+
+                <Button x:Name="C1xR4" Grid.Column="1" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR4" Grid.Column="2" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR4" Grid.Column="3" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR4" Grid.Column="4" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR4" Grid.Column="5" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR4" Grid.Column="6" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR4" Grid.Column="7" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR4" Grid.Column="8" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR4" Grid.Column="9" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR4" Grid.Column="10" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+
+                <Button x:Name="C1xR5" Grid.Column="1" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR5" Grid.Column="2" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR5" Grid.Column="3" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR5" Grid.Column="4" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR5" Grid.Column="5" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR5" Grid.Column="6" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR5" Grid.Column="7" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR5" Grid.Column="8" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR5" Grid.Column="9" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR5" Grid.Column="10" Grid.Row="5" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+
+                <Button x:Name="C1xR6" Grid.Column="1" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR6" Grid.Column="2" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR6" Grid.Column="3" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR6" Grid.Column="4" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR6" Grid.Column="5" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR6" Grid.Column="6" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR6" Grid.Column="7" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR6" Grid.Column="8" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR6" Grid.Column="9" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR6" Grid.Column="10" Grid.Row="6" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+
+                <Button x:Name="C1xR7" Grid.Column="1" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR7" Grid.Column="2" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR7" Grid.Column="3" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR7" Grid.Column="4" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR7" Grid.Column="5" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR7" Grid.Column="6" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR7" Grid.Column="7" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR7" Grid.Column="8" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR7" Grid.Column="9" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR7" Grid.Column="10" Grid.Row="7" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+
+                <Button x:Name="C1xR8" Grid.Column="1" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR8" Grid.Column="2" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR8" Grid.Column="3" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR8" Grid.Column="4" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR8" Grid.Column="5" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR8" Grid.Column="6" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR8" Grid.Column="7" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR8" Grid.Column="8" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR8" Grid.Column="9" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR8" Grid.Column="10" Grid.Row="8" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+
+                <Button x:Name="C1xR9" Grid.Column="1" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR9" Grid.Column="2" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR9" Grid.Column="3" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR9" Grid.Column="4" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR9" Grid.Column="5" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR9" Grid.Column="6" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR9" Grid.Column="7" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR9" Grid.Column="8" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR9" Grid.Column="9" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR9" Grid.Column="10" Grid.Row="9" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+
+                <Button x:Name="C1xR10" Grid.Column="1" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C2xR10" Grid.Column="2" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C3xR10" Grid.Column="3" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C4xR10" Grid.Column="4" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C5xR10" Grid.Column="5" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C6xR10" Grid.Column="6" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C7xR10" Grid.Column="7" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C8xR10" Grid.Column="8" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C9xR10" Grid.Column="9" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <Button x:Name="C10xR10" Grid.Column="10" Grid.Row="10" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Mouse_Click" Tag="Free"/>
+                <!--#endregions-->
+
+                <!--#region NameRows&Columns-->
+                <Label Content="А" Grid.Column="1" Grid.Row="0"/>
+                <Label Content="Б" Grid.Column="2" Grid.Row="0"/>
+                <Label Content="В" Grid.Column="3" Grid.Row="0"/>
+                <Label Content="Г" Grid.Column="4" Grid.Row="0"/>
+                <Label Content="Д" Grid.Column="5" Grid.Row="0"/>
+                <Label Content="Е" Grid.Column="6" Grid.Row="0"/>
+                <Label Content="Ж" Grid.Column="7" Grid.Row="0"/>
+                <Label Content="З" Grid.Column="8" Grid.Row="0"/>
+                <Label Content="И" Grid.Column="9" Grid.Row="0"/>
+                <Label Content="К" Grid.Column="10" Grid.Row="0"/>
+                <Label Content="" Grid.Column="0" Grid.Row="0"/>
+                <Label Content="1" Grid.Column="0" Grid.Row="1"/>
+                <Label Content="2" Grid.Column="0" Grid.Row="2"/>
+                <Label Content="3" Grid.Column="0" Grid.Row="3"/>
+                <Label Content="4" Grid.Column="0" Grid.Row="4"/>
+                <Label Content="5" Grid.Column="0" Grid.Row="5"/>
+                <Label Content="6" Grid.Column="0" Grid.Row="6"/>
+                <Label Content="7" Grid.Column="0" Grid.Row="7"/>
+                <Label Content="8" Grid.Column="0" Grid.Row="8"/>
+                <Label Content="9" Grid.Column="0" Grid.Row="9"/>
+                <Label Content="10" Grid.Column="0" Grid.Row="10"/>
+                <!--#endregions-->
+            </Grid>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="turnShip_Button" Content="Повернуть" Margin="10" Width="110" Click="TurnShip_Click"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 20">
+                <Grid x:Name="ShipView" >
+                    <Grid.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Width" Value="{Binding RelativeSource={RelativeSource Self}, Path=ActualHeight}"/>
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="BorderBrush" Value="Black"/>
+                            <Setter Property="Height" Value="27.2"/>
+                        </Style>
+                    </Grid.Resources>
+                </Grid>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20 0">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <RadioButton Content="Катер (1кл.)" GroupName="TypeShips" Click="RadioButton1_Click" x:Name="Radio1"/>
+                    <Label Content="Count:" />
+                    <Label x:Name="Count1"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <RadioButton Content="Эсминец (2кл.)" GroupName="TypeShips" Click="RadioButton2_Click" x:Name="Radio2"/>
+                    <Label Content="Count:"/>
+                    <Label x:Name="Count2"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <RadioButton Content="Крейсер (3кл.)" GroupName="TypeShips" Click="RadioButton3_Click" x:Name="Radio3"/>
+                    <Label Content="Count:"/>
+                    <Label x:Name="Count3"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                    <RadioButton Content="Линкор (4кл.)" GroupName="TypeShips" Click="RadioButton4_Click" x:Name="Radio4"/>
+                    <Label Content="Count:"/>
+                    <Label x:Name="Count4"/>
+                </StackPanel>
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Случайная" Click="RandomSetShip_Click" Name="random_button" Margin="10"/>
+            </StackPanel>
+            <Button Content="Play" Margin="20" Click="Play_Click"/>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>
